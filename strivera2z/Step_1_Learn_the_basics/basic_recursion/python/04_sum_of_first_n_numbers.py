@@ -27,4 +27,9 @@ if __name__=='__main__':
         print(ob.sumOfSeries(N)) 
 # } Driver Code Ends
 
+# By instructor:
+"""
+THere are 2 ways tp solve it parameterized metgid
+"""
+
 
