@@ -48,4 +48,17 @@ if __name__ == '__main__':
 """
 Solutions by striver if different from mine
 """
+
+"""
+For reversing array with single pointer, we can use i as the first pointer and n-i-1 as the second pointer.
+So, code would look something like below
+"""
     
+def reverse_array_recursion(arr, i):
+    n = len(arr)
+    if i >= n//2:
+        return arr
+    arr[i], arr[n-i-1] = arr[n-i-1], arr[i]
+    return reverse_array_recursion(arr, i+1)
+
+print(reverse_array_recursion([1,2,3,4,5], 0))
