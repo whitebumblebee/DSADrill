@@ -62,3 +62,21 @@ def reverse_array_recursion(arr, i):
     return reverse_array_recursion(arr, i+1)
 
 print(reverse_array_recursion([1,2,3,4,5], 0))
+
+# without return statement
+def reverse_array_recurse(i, arr):
+    n = len(arr)
+    if i >= n//2:
+        return
+    arr[i], arr[i-n-1] = arr[i-n-1], arr[i]
+    reverse_array_recurse(i+1, arr)
+    
+
+def main():
+    arr = [1,2,3,4,5]
+    n = len(arr)
+    reverse_array_recurse(0, arr)
+    print(arr)
+
+if __name__ == "__main__":
+    main()
