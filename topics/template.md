@@ -1,0 +1,5 @@
+- Whenever you want to prep a note related to a particular problem, do these:
+  - Add link to the problem for future ref(and star it on the platform if not able to solve)
+  - Write the core idea or concept you learned from solving it.
+  - note how you should approach the problem from start
+  - Record any coding or debugging mistakes
